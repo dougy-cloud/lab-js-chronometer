@@ -5,12 +5,13 @@ class Chronometer {
     }
 
   start(printTimeCallback) {
-    this.intervalId = setInterval(() => {
-      this.currentTime++;
-      if (typeof printTimeCallback === 'function'){
-        printTimeCallback();
-      }
-    }, 1000);
+    this.intervalId = setInterval(() => { 
+      this.currentTime+=1; // elle augmente d'une seconde conte +1 chaque seconde
+      setInterval(printTimeCallback, 1000)
+     // if (PrintTimeCallback){
+       // printTimeCallback();
+      // } 
+    }, 1000); // toutes les unes secondes
     }
 
   getMinutes() {

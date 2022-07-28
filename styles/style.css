@@ -21,8 +21,8 @@ body {
 }
 
 #sphere {
-  border: 2px solid #000;
-  border-radius: 20px;
+  border: 2px solid #f14949;
+  border-radius: 90px;
   box-sizing: border-box;
   font-family: "Digi";
   font-size: 80px;
